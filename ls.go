@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func main() {
+func ls() {
 	currentWorkingDirectory, err := os.Getwd()
 	if err != nil {
 		fmt.Println(err)
