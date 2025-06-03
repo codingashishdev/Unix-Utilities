@@ -5,6 +5,7 @@ steps 1: read a file
 steps 2: save the content of the file somewhere
 steps 3: display the stored content in the terminal in prettier format(will figured out later after implementing all the functionalities)
 */
+
 package main
 
 import (

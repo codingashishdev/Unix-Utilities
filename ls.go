@@ -17,7 +17,6 @@ func ls() {
 	}
 
 	for _, file := range files {
-
 		info, err := os.Stat(file.Name())
 		if err != nil {
 			fmt.Println(err)
