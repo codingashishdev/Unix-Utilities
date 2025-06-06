@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-/* displays the number of lines, words, and bytes in a file */
+/* display the number of lines, words, and bytes in a file */
 
 func ws() {
 
@@ -25,13 +25,9 @@ func ws() {
 	byteToStringFormat := string(fileContent)
 	individual_words := strings.Split(byteToStringFormat, " ")
 
-	lines := strings.Count(byteToStringFormat, "\n") + 1
-	words := len(individual_words)
-	bytes := len(byteToStringFormat)
-
-	fmt.Println("Lines:", lines)
-	fmt.Println("Words:", words)
-	fmt.Println("Bytes:", bytes)
+	fmt.Println("Lines:", strings.Count(byteToStringFormat, "\n")+1)
+	fmt.Println("Words:", len(individual_words))
+	fmt.Println("Bytes:", len(byteToStringFormat))
 }
 
 func main() {
